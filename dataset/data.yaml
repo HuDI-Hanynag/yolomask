@@ -1,0 +1,6 @@
+names:
+- mask
+- no-mask
+nc: 2
+train: /home/sonic/ai/yolomask/dataset/train.txt
+val: /home/sonic/ai/yolomask/dataset/val.txt
