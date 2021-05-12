@@ -1,0 +1,42 @@
+<pycharm>
+파일 생성 : pycharm 폴더에서 우클릭 해서 생성가능, 삭제도 가능
+
+파일 실행 : 코드 작성후 우상단 edit configuration에 들어가서
+script path에 파이썬 파일이 있는 주소를 붙여넣고,
+python interpreter에 python37이 있는 위치를 붙여넣으면 실행 가능
+
+파일 commit, push : 우상단 체크표 들어가서 commit and push를 하면
+github 본인의 branch에 push가 됨. 원칙상 git bash와 마찬가지로 push를 위해 commit도
+필수인 것으로 확인됨
+
+
+
+<git bash>
+선행작업 : 앞으로 작성할 새 폴더에서 우클릭을 하여 git bash를 열고
+git init로 초기화한다
+git remote add origin "repository adress"로 폴더와 github를 연결한다.
+
+
+파일 생성 : 평소처럼 원하는 파일 위치에 python 만들면 됨.
+
+파일 실행 : 일반적인 환경에서 python을 실행시킬 때와 동일.
+
+파일 commit, push : 작업을 한 폴더에서 우클릭, git bash를 연다.
+
+1. git pull origin branch로 pull한다 (항상 push 전에는 pull이 있다는 것을 명심)
+2. git add . 으로 바뀐 모든 것을 add한다.
+3. git commit -m "message"로 commit을 한다
+4. 2번과 3번 작업한 것을 push하기 위해 git push origin branch한다.
+
+이러한 1부터 4의 작업은 pycharm의 terminal에 입력해도 똑같이 작동한다.
+
+-----------------------------------------------------------------------------------------------
+git bash 같은 경우에는 python 파일 뿐만 아니라
+텍스트 파일 등 다양한 유형의 파일을 쉽게 편집하고 올릴 수 있다는 점에서 장점으로 보임.
+또한 작업을 저장 안 하고 git checkout master로 이동하려고 하면 push를 안했기에
+이동 자체를 막는 유용한 기능이 있음. 다만 그대신 push pull 과정이 조금은 어려울 수 있음
+
+git status : 달라진 게 뭐가 있는지 확인하는 명령어
+git checkout branch : branch로 이동
+git checkout master : master로 이동
+-----------------------------------------------------------------------------------------------
