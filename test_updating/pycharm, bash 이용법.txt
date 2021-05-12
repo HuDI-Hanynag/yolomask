@@ -34,6 +34,10 @@ pycharm termianl 또는 git bash에서
 1. git checkout master
 2. git merge branch이름
 3. git push origin master
+
+또는 pycharm 좌상단에 git을 클릭해서 merge를 할 수 있다. 편의를 위해서 명령어 중
+git merge가 미리 써있고, branch이름만 적으면 merge됨을 알 수 있다.
+
 -----------------------------------------------------------------------------------------------
 git bash 같은 경우에는 python 파일 뿐만 아니라
 텍스트 파일 등 다양한 유형의 파일을 쉽게 편집하고 올릴 수 있다는 점에서 장점으로 보임.
@@ -43,4 +47,5 @@ git bash 같은 경우에는 python 파일 뿐만 아니라
 git status : 달라진 게 뭐가 있는지 확인하는 명령어
 git checkout branch : branch로 이동
 git checkout master : master로 이동
+pycharm-git-vcs operation-show diff : 파일 중 무엇이 바뀐지 알 수 있다 (git status와 동일)
 -----------------------------------------------------------------------------------------------
