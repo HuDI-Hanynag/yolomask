@@ -14,7 +14,7 @@ from utils.general import check_img_size, check_requirements, check_imshow, non_
 from utils.plots import plot_one_box
 from utils.torch_utils import select_device, load_classifier, time_synchronized
 
-
+save_file= ""
 def detect(opt):
     source, weights, view_img, save_txt, imgsz = opt.source, opt.weights, opt.view_img, opt.save_txt, opt.img_size
     save_img = not opt.nosave and not source.endswith('.txt')  # save inference images
@@ -99,6 +99,9 @@ def detect(opt):
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
+                    global save_file
+                    if (n>=1):
+                        save_file+=f'{n}'
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
@@ -118,6 +121,7 @@ def detect(opt):
 
             # Print time (inference + NMS)
             print(f'{s}Done. ({t2 - t1:.3f}s)')
+            print(save_file)
 
             # Stream results
             if view_img:
@@ -184,3 +188,6 @@ if __name__ == '__main__':
                 strip_optimizer(opt.weights)
         else:
             detect(opt=opt)
+
+
+
