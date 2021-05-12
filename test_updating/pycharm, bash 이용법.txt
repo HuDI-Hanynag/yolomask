@@ -10,12 +10,10 @@ github 본인의 branch에 push가 됨. 원칙상 git bash와 마찬가지로 pu
 필수인 것으로 확인됨
 
 
-
 <git bash>
 선행작업 : 앞으로 작성할 새 폴더에서 우클릭을 하여 git bash를 열고
 git init로 초기화한다
 git remote add origin "repository adress"로 폴더와 github를 연결한다.
-
 
 파일 생성 : 평소처럼 원하는 파일 위치에 python 만들면 됨.
 
@@ -30,6 +28,12 @@ git remote add origin "repository adress"로 폴더와 github를 연결한다.
 
 이러한 1부터 4의 작업은 pycharm의 terminal에 입력해도 똑같이 작동한다.
 
+
+<master와 merge하는 법>
+pycharm termianl 또는 git bash에서
+1. git checkout master
+2. git merge branch이름
+3. git push origin master
 -----------------------------------------------------------------------------------------------
 git bash 같은 경우에는 python 파일 뿐만 아니라
 텍스트 파일 등 다양한 유형의 파일을 쉽게 편집하고 올릴 수 있다는 점에서 장점으로 보임.
