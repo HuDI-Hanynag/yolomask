@@ -1,4 +1,7 @@
 <pycharm>
+vcs에서 share github로 연동해야 함
+branch 만들고 commit push 해야 github에서 만들어짐
+
 파일 생성 : pycharm 폴더에서 우클릭 해서 생성가능, 삭제도 가능
 
 파일 실행 : 코드 작성후 우상단 edit configuration에 들어가서
@@ -15,6 +18,7 @@ github 본인의 branch에 push가 됨. 원칙상 git bash와 마찬가지로 pu
 <git bash>
 선행작업 : 앞으로 작성할 새 폴더에서 우클릭을 하여 git bash를 열고
 git init로 초기화한다
+
 git remote add origin "repository adress"로 폴더와 github를 연결한다.
 
 파일 생성 : 평소처럼 원하는 파일 위치에 python 만들면 됨.
