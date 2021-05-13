@@ -2,7 +2,7 @@ import argparse
 import time
 from pathlib import Path
 
-# for test version by kwak 1
+# Pycharm update test 
 
 import cv2
 import torch
