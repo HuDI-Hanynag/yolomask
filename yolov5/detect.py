@@ -1,4 +1,4 @@
-# for demo version by kwak
+# for demo version by kwak branch mode
 
 import argparse
 import time
