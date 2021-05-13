@@ -5,6 +5,8 @@
 *** 파일창을 눌러서 *** script path에 파이썬 파일의 주소(파일이 있는 주소 아님)를 붙여넣고,
 python interpreter에 python37이 있는 위치를 붙여넣으면 실행 가능
 
+*** 그냥 터미널에서 dir하고, cd 주소하고, python 이렇게 하면 제일 쉬움 ***
+
 파일 commit, push : 우상단 체크표 들어가서 commit and push를 하면
 github 본인의 branch에 push가 됨. 원칙상 git bash와 마찬가지로 push를 위해 commit도
 필수인 것으로 확인됨
