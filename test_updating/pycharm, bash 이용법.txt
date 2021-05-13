@@ -1,5 +1,5 @@
 <pycharm>
-vcs에서 share github로 연동해야 함
+선행작업 : vcs에서 share github로 연동해야 함
 branch 만들고 commit push 해야 github에서 만들어짐
 
 파일 생성 : pycharm 폴더에서 우클릭 해서 생성가능, 삭제도 가능
@@ -49,6 +49,8 @@ git bash 같은 경우에는 python 파일 뿐만 아니라
 텍스트 파일 등 다양한 유형의 파일을 쉽게 편집하고 올릴 수 있다는 점에서 장점으로 보임.
 또한 작업을 저장 안 하고 git checkout master로 이동하려고 하면 push를 안했기에
 이동 자체를 막는 유용한 기능이 있음. 다만 그대신 push pull 과정이 조금은 어려울 수 있음
+
+local도 master와 branch가 있다. 즉 push 하기 전에도 존재한다.
 
 git status : 달라진 게 뭐가 있는지 확인하는 명령어
 git checkout branch : branch로 이동
