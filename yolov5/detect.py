@@ -101,9 +101,9 @@ def detect(opt):
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
-                    global save_file
-                    if (n>=1):
-                        save_file+=f'{n}'
+                global save_file
+                if (n >= 1):
+                    save_file += f'{n}'
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
@@ -120,10 +120,17 @@ def detect(opt):
                         plot_one_box(xyxy, im0, label=label, color=colors[c], line_thickness=opt.line_thickness)
                         if opt.save_crop:
                             save_one_box(xyxy, im0s, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
+            else:
+                save_file += '0'
 
             # Print time (inference + NMS)
             print(f'{s}Done. ({t2 - t1:.3f}s)')
             print(save_file)
+
+            if len(save_file)>0:
+                print(save_file[-1])
+                with open('yolomask.txt', 'w') as f:
+                    f.write(save_file)
 
             # Stream results
             if view_img:
